@@ -8,6 +8,7 @@ On a Unix/Linux machine execute the following commands: <br> <br>
 
 unzip VSR-LKH-V2-main.zip <br>
 cd VSR-LKH-V2-main <br>
+chmod +777 -R VSR-LKH-Final <br>
 cd VSR-LKH-Final <br>
 make <br> <br>
 
@@ -19,6 +20,7 @@ On a Unix/Linux machine execute the following commands: <br> <br>
 
 unzip VSR-LKH-V2-main.zip <br>
 cd VSR-LKH-V2-main <br>
+chmod +777 -R VSR-LKH-3-Final <br>
 cd VSR-LKH-3-Final <br>
 make <br> <br>
 
