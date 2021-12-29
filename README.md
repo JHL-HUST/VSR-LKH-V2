@@ -40,7 +40,7 @@ The default version of VSR-LKH-3 uses the α-measure to decide the candidate set
 
 Data
 ----
-All the 236 tested TSP instances from TSPLIB, National TSP, VLSI TSP benchmarks are available in [Instances](./Instances). All the 425 tested TSPTW instances and 65 tested CTSP instances are available in [VSR-LKH-3-Final/Instances](./VSR-LKH-3-Final/Instances). <br> <br>
+All the 236 tested TSP instances from TSPLIB, National TSP, VLSI TSP benchmarks are available in [Instances](./Instances). The parameter files for 236 TSP instances are available in [ParFiles](./ParFiles). All the 425 tested TSPTW instances and 65 tested CTSP instances are available in [VSR-LKH-3-Final/Instances](./VSR-LKH-3-Final/Instances). <br> <br>
 
 Contact
 ----
