@@ -98,7 +98,7 @@ GainType LinKernighan()
     do {
         /* Choose t1 as the first "active" node */
         while ((t1 = RemoveFirstActive())) {
-            //SRandom((int)time(NULL));
+            SRandom((int)time(NULL));
             /* t1 is now "passive" */
             SUCt1 = SUC(t1);
             if ((TraceLevel >= 3 || (TraceLevel == 2 && Trial == 1)) &&
