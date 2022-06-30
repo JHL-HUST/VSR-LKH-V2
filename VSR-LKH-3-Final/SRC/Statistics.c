@@ -58,11 +58,11 @@ void PrintStatistics()
     double _TimeMin = TimeMin;
     GainType _Optimum = Optimum;
     
-    FILE* pp;
+    //FILE* pp;
     //char str[100];
     //strcat(str, "CVRP-results.xls");
-    pp = fopen("11111CTSP-results.xls", "a+");
-    fprintf(pp, ProblemFileName); fprintf(pp,"\t");
+    //pp = fopen("11111CTSP-results.xls", "a+");
+    //fprintf(pp, ProblemFileName); fprintf(pp,"\t");
     
     printff("Successes/Runs = %d/%d \n", Successes, Runs);
     if (_Runs == 0)
@@ -113,12 +113,12 @@ void PrintStatistics()
     
     //fprintf(pp,"%d\t",CostMin);fprintf(pp,"%0.2f\t",(double) CostSum / _Runs);fprintf(pp,"%d\t",CostMax);
     //fprintf(pp,"%d\t",PenaltyMin);fprintf(pp,"%0.2f\t",(double) PenaltySum / _Runs);fprintf(pp,"%d\t",PenaltyMax);
-    fprintf(pp,"%lld\t",BestPenalty);fprintf(pp,"%lld\t",BestCost);
-    fprintf(pp,"%0.2f\t",(double)(PenaltySum / _Runs));fprintf(pp,"%0.2f\n",(double) CostSum / _Runs);
+    //fprintf(pp,"%lld\t",BestPenalty);fprintf(pp,"%lld\t",BestCost);
+    //fprintf(pp,"%0.2f\t",(double)PenaltySum / _Runs);fprintf(pp,"%0.2f\t",(double) CostSum / _Runs);
     
     //fprintf(pp,"%0.3f\n",fabs(TimeSum) / _Runs);
-    fclose(pp);
-    
+    //fclose(pp);
+    /*
     char ss[100];
     sprintf(ss, "%d", 1);
     strcat(ss, ProblemFileName);
@@ -131,5 +131,5 @@ void PrintStatistics()
     strcat(ss, ss3);
     strcat(ss, ".txt");
     WriteTour(ss, BestTour, BestCost);
-    
+    */
 }

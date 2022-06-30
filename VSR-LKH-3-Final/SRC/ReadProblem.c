@@ -830,6 +830,10 @@ static void CheckSpecificationPart()
     if ((ProblemType == ATSP || ProblemType == SOP) &&
         WeightType != EXPLICIT && WeightType != -1)
         eprintf("Conflicting TYPE and EDGE_WEIGHT_TYPE");
+    if (CandidateSetType == ALPHA)
+        MethodforCS = 1;
+    else
+        MethodforCS = 2;
     if (CandidateSetType == DELAUNAY && !TwoDWeightType() &&
         MaxCandidates > 0)
         eprintf
