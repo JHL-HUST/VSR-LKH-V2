@@ -66,14 +66,17 @@ int main(int argc, char *argv[])
         Runs = 0;
     }
     Optimum = 0;
-    Runs = 10;
+    //Runs = 10;
     Method = 1;
-    /* Find a specified number (Runs) of local optima */
-    double BeginTime = GetTime();
-    double AllTime = 0;
-    for (Run = 1; Run <= Runs; Run++) {
+    
+    if (ProblemType == TSPTW){
+        Runs = 10;
+        TimeLimit = Dim / 10;
         MaxTrials = 100000000;
-        //TimeLimit = Dim*12; 
+    }
+    
+    if (ProblemType == CTSP){
+        Runs = 20;
         if (Dim < 200)
             TimeLimit = 60;
         else if (Dim < 1000)
@@ -82,6 +85,13 @@ int main(int argc, char *argv[])
             TimeLimit = 3600;
         else 
             TimeLimit = 14400;
+        MaxTrials = 100000000;
+    }
+    
+    /* Find a specified number (Runs) of local optima */
+    double BeginTime = GetTime();
+    double AllTime = 0;
+    for (Run = 1; Run <= Runs; Run++) {
         LastTime = GetTime();
         Cost = FindTour();      /* using the Lin-Kernighan heuristic */
         if (MaxPopulationSize > 1 && !TSPTW_Makespan) {

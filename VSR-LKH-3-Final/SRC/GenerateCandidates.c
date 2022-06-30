@@ -130,7 +130,11 @@ void GenerateCandidates(int MaxCandidates, GainType MaxAlpha,
             if (a < 0) {
                 a = INT_MAX;
             }
-            double v = LowerBound / (Distance_TRUE(From, To) + a);
+            double v;
+            if (ProblemType == CTSP && Dim < 200)
+                v = LowerBound / (Distance(From, To) + a);
+            else
+                v = LowerBound / (Distance_TRUE(From, To) + a);
             if (a <= MaxAlpha && IsPossibleCandidate(From, To)) {
                 /* Insert new candidate edge in From->CandidateSet */
                 NN = NFrom;

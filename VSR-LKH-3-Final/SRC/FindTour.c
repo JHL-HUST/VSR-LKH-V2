@@ -58,7 +58,7 @@ GainType FindTour()
     
     double badtime = GetTime();
     for (Trial = 1; Trial <= MaxTrials; Trial++) {
-    
+        
         if (GetTime() - badtime >= TimeLimit / 20.0) {
             Method = (Method) % 3 + 1;
             badtime = GetTime();
