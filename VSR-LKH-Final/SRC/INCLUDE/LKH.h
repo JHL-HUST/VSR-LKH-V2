@@ -144,7 +144,7 @@ struct Candidate {
 };
 
 int BestTrial;
-int tttype; /* 1:ALPHA 2:POPMUSIC
+int tttype; /* 1:ALPHA 2:POPMUSIC */
 double BestTime;
 double Alpha2; /* learning rate */
 double Gama; /* reward discount parameter */
