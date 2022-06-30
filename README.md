@@ -1,6 +1,8 @@
-# VSR-LKH-V2
+# VSR-LKH(-3)
 ----
-Reinforced Lin-Kernighan-Helsgaun Algorithms for the Traveling Salesman Problem and its Variants (VSR-LKH and VSR-LKH-3 algorithms) <br> <br>
+This repository contains the code to the VSR-LKH algorithm for the TSP proposed in our paper: <br> <br>
+[Reinforced Lin-Kernighan-Helsgaun Algorithms for the Traveling Salesman Problems](https://ojs.aaai.org/index.php/AAAI/article/view/17476) <br>
+Jiongzhi Zheng, Kun He, Jianrong Zhou, Yan Jin, Chu-Min Li <br> <br>
 
 VSR-LKH
 ----
