@@ -222,6 +222,7 @@ struct Constraint {
 };
 
 //double TimeLimit2;
+int MethodforCS; //1: ALPHA, 2: POPMUSIC
 double BestTime;
 int AscentCandidates;   /* Number of candidate edges to be associated
                            with each node during the ascent */
